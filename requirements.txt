@@ -1,0 +1,10 @@
+# Versions used to produce the results in the paper (Python 3.10).
+numpy==2.2.6
+scipy==1.15.2
+pandas==2.3.3
+scikit-learn==1.7.2
+matplotlib==3.10.7
+pennylane==0.42.3
+pennylane-lightning==0.42.0
+joblib==1.5.2
+tqdm==4.67.1
