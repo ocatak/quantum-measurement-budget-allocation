@@ -4,6 +4,7 @@ Code, generated data, and figures for the paper:
 
 > **Measurement-Budget Allocation in Quantum Learning with Finite-Shot Generalization Guarantees**
 > F. Ozgur Catak, University of Stavanger.
+> arXiv: [2608.24891](https://arxiv.org/abs/2608.24891)
 
 The repository implements the finite-shot generalization bound (Theorem 3.1), the closed-form measurement-budget allocation rule (Theorem 3.2), and the six experiments (Experiments 0–5) reported in the paper.
 
@@ -46,6 +47,8 @@ Circuits: 2 qubits (`d = 4`) and 4 qubits (`d = 16`), `RY` angle embedding of th
 | 12 | Exp 3 | Fig. 6 | Fixed budget `B ∈ {500, 1000, 2000}`, `n` on a log grid, `S = ⌊B/n⌋`. |
 | 13 | Exp 4 | Table 8 | Bound-to-gap ratios near the predicted allocation `(n*, S*)`. |
 | 16 | Exp 5 | Fig. 7, Table 9 | Fixed-budget sweep with the concave loss; shows the U-shaped trade-off in the empirical gap and compares it with the absolute loss on the same circuits. |
+
+Figure and table numbers refer to the revised version of the paper. arXiv version 1 (June 2026) contains Experiments 0–4 only; Experiment 5 and the `log(4B/δ)` form of the allocation rule were added in the revision.
 
 Note: Experiments 1–4 were run with the allocation `n* = 2·√(2dB / log(2B/δ))` (function `n_star_approx`). The paper uses `log(4B/δ)` (function `n_star_revised`), which gives values about 3% smaller. All reported bound values use the exact constants of Theorem 3.1.
 
@@ -100,11 +103,14 @@ Outputs are written to `figures/`, `tables/`, and `results/`. The global seed is
 ## Citation
 
 ```bibtex
-@article{catak_measurement_budget_quantum,
-  title  = {Measurement-Budget Allocation in Quantum Learning with Finite-Shot Generalization Guarantees},
-  author = {Catak, F. Ozgur},
-  year   = {2026},
-  note   = {Preprint}
+@misc{catak2026measurementbudget,
+  title         = {Measurement-Budget Allocation in Quantum Learning with Finite-Shot Generalization Guarantees},
+  author        = {Catak, Ferhat Ozgur},
+  year          = {2026},
+  eprint        = {2608.24891},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2608.24891}
 }
 ```
 
